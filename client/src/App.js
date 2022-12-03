@@ -3,7 +3,9 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("http://177.153.51.103:3001"); //https://www.oasistv.com.br/ //http://localhost:3001
+const socket = io.connect("http://177.153.51.103:50001"); //https://www.oasistv.com.br/ //http://localhost:3001
+console.log("PORTA COM 50001");
+
 
 function App() {
   const [username, setUsername] = useState("");
